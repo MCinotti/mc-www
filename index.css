@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Raleway&display=swap');
+
+:root {
+    /* define fonts */
+    --font: 'Raleway', 'Orbitron', 'Terminus', 'Font Awesome Brands', sans-serif;
+    --font-menu: 'Permanent Marker', 'Orbitron', 'Font Awesome Brands', sans-serif;
+    --font-h1: 'Permanent Marker', 'Orbitron', 'Font Awesome Brands', sans-serif;
+    --font-code: 'Orbitron', 'Terminus', 'Hack', 'Font Awesome Brands', 'monospace';
+
+    /* define colors */
+    --text: #e5dfdd;
+    --text-alt: #181616;
+
+    /* CSS HEX */
+    --error: #ef476fff;
+    --code: #ffd166ff;
+    --bg-alt: #06d6a0ff;
+    --main: #118ab2ff;
+    --bg: #073b4cff;
+
+    /* CSS HSL 
+    --error-grad: hsla(346, 84%, 61%, 1);
+    --code--grad: hsla(42, 100%, 70%, 1);
+    --bg-alt-grad:hsla(164, 95%, 43%, 1);
+    --main-grad:  hsla(195, 83%, 38%, 1);
+    --bg-grad:    hsla(195, 83%, 16%, 1);
+    */
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text-alt);
+    background: var(--bg);
+}
+
+/* Links */
+a {
+    color: var(--code);
+    text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+}
+
+a:hover {
+    color: var(--secondary);
+    text-shadow: 0.05em 0.05em 0.1em var(--complement);
+}
+
+a::visited {
+    color: var(--primary);
+    text-shadow: 0.1em 0.1em 0.1em var(--secondary);
+}
+
+/* line break */
+hr {
+    border: 2rem solid var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-h1);
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--primary)
+}
+
+a {
+    color: var(--text-alt);
+    text-shadow: 0.0rem -0.1rem 1rem var(--background);
+}
+
+a:hover {
+    color: var(--background);
+    text-shadow: 0.0rem -0.1rem 1rem var(--text);
+}
+
+a:current {
+    color: var(--background);
+    text-shadow: 0.0rem -0.1rem 1rem var(--secondary);
+}
+
+/*
+Media Queries 
+    Note: The best way to structure the use of media queries is to create the queries
+        near the relevant code. For example, if you wanted to change the styles for buttons
+        on small devices, paste the mobile query code up in the buttons section and style it
+        there.
+*/
+
+/* Larger than mobile */
+@media(min-width: 400px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media(min-width: 550px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than tablet */
+@media(min-width: 750px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than desktop */
+@media(min-width: 1000px) {
+    html {
+        width: 100%;
+    }
+}
+
+/* Larger than Desktop HD */
+@media(min-width: 1200px) {
+    html {
+        width: 100%;
+    }
+}
