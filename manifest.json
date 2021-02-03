@@ -1,0 +1,17 @@
+{
+  "name": "MCinotti",
+  "short_name": "mcinotti",
+  "description": "MCinotti's Persoal Website.",
+  "theme_color": "#ff6200",
+  "background_color": "#111111",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/?homescreen=1",
+  "icons": [
+    {
+      "src": "icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

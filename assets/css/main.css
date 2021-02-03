@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  /* define fonts */
+  --font: "Raleway", "Roboto", "Orbitron", "Terminess", "Font Awesome Brands",
+    sans-serif;
+  --font-nav: "Permanent Marker", "Orbitron", "Terminess", "Font Awesome Brands",
+    sans-serif;
+  --font-h: "Permanent Marker", "Terminess", "Orbitron", "Raleway",
+    "Roboto" "Font Awesome Brands", sans-serif;
+  --font-code: "Orbitron", "Terminess", "Font Awesome Brands", "monospace";
+
+  /* define colors */
+  --text: hsl(0, 0%, 100%);
+  --text-alt: hsl(0, 4%, 9%);
+
+  /* CSS HEX */
+  --bg: hsl(195, 86%, 11%);
+  --bg-alt: hsl(195, 83%, 16%);
+
+  --main: hsl(195, 83%, 38%);
+  --main-alt: hsl(180, 75%, 20%);
+
+  --accent: hsl(195, 80%, 50%);
+  --accent-alt: hsl(180, 45%, 50%);
+
+  --code: hsl(165, 100%, 50%);
+  --code-bg: hsl(0, 5%, 45%);
+
+  --error: hsl(346, 84%, 61%);
+
+  --button: hsl(var(--text));
+  --button-bg: var(--main-alt);
+
+  --link: var(--accent-alt);
+  --hover: var(--error);
+  --visited: var(--accent-alt);
+  --active: var(--accent);
+
+  --select-text: var(--text-alt);
+  --select-bg: var(--accent-alt);
+
+  background-color: var(--bg2);
+  color: var(--text);
+}
+
+::selection {
+  color: var(--select-text);
+  background: var(--select-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-h1);
+  text-shadow: 0.1rem 0.1rem 0.2rem var(--main-alt);
+}
+
+img {
+  object-fit: cover;
+}
+
+code {
+  border-width: 3px;
+  border-color: (--main);
+  background-color: var(--code-bg);
+  color: var(--code);
+  padding: 0.1rem 0.1rem;
+}
+
+.scrollbar {
+  overflow-y: scroll;
+  /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  html {
+    width: 100%;
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  html {
+    width: 100%;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  html {
+    width: 100%;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  html {
+    width: 100%;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  html {
+    width: 100%;
+  }
+}
