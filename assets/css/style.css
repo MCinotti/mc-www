@@ -16,20 +16,20 @@
   --text-alt: hsl(0, 4%, 9%);
 
   /* CSS HEX */
-  --bg: hsl(195, 86%, 11%);
-  --bg-alt: hsl(195, 83%, 16%);
+  --bg: hsl(23, 86%, 11%);
+  --bg-alt: hsl(43, 83%, 16%);
   --bg2: hsl(0, 0%, 13%);
 
-  --main: hsl(195, 83%, 38%);
-  --main-alt: hsl(180, 75%, 20%);
+  --main: hsl(23, 100%, 50%);
+  --main-alt: hsl(23, 100%, 20%);
 
-  --accent: hsl(195, 80%, 50%);
-  --accent-alt: hsl(180, 45%, 50%);
+  --accent: hsl(23, 66%, 66%);
+  --accent-alt: hsl(23, 66%, 36%);
 
-  --code: hsl(165, 100%, 50%);
-  --code-bg: hsl(0, 5%, 45%);
+  --code: hsl(23, 100%, 50%);
+  --code-bg: hsl(0, 5%, 35%);
 
-  --error: hsl(346, 84%, 61%);
+  --error: hsl(17, 100%, 50%);
 
   --button: hsl(var(--text));
   --button-bg: var(--main-alt);
@@ -47,10 +47,10 @@
 }
 .nav {
   background-color: var(--bg);
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
-.nav a:hover {
+.nav-link:hover {
   background-color: var(--bg2);
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -67,11 +67,11 @@
 .nav-tabs li {
   align-items: center;
 }
-.nav-link.active{
+.nav-link.active {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
-}
+
 #main-content {
   padding-top: 3rem;
   width: 100%;

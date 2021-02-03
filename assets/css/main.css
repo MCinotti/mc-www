@@ -6,49 +6,25 @@
   /* define fonts */
   --font: "Raleway", "Roboto", "Orbitron", "Terminess", "Font Awesome Brands",
     sans-serif;
-  --font-nav: "Permanent Marker", "Orbitron", "Terminess", "Font Awesome Brands",
-    sans-serif;
-  --font-h: "Permanent Marker", "Terminess", "Orbitron", "Raleway",
+  --font-nav: "Permanent Marker", "Orbitron", "TerminessTTF NF",
+    "Font Awesome Brands", sans-serif;
+  --font-h: "Permanent Marker", "TerminessTTF NF", "Orbitron", "Raleway",
     "Roboto" "Font Awesome Brands", sans-serif;
   --font-code: "Orbitron", "Terminess", "Font Awesome Brands", "monospace";
-
-  /* define colors */
-  --text: hsl(0, 0%, 100%);
-  --text-alt: hsl(0, 4%, 9%);
-
-  /* CSS HEX */
-  --bg: hsl(195, 86%, 11%);
-  --bg-alt: hsl(195, 83%, 16%);
-
-  --main: hsl(195, 83%, 38%);
-  --main-alt: hsl(180, 75%, 20%);
-
-  --accent: hsl(195, 80%, 50%);
-  --accent-alt: hsl(180, 45%, 50%);
-
-  --code: hsl(165, 100%, 50%);
-  --code-bg: hsl(0, 5%, 45%);
-
-  --error: hsl(346, 84%, 61%);
-
-  --button: hsl(var(--text));
-  --button-bg: var(--main-alt);
-
-  --link: var(--accent-alt);
-  --hover: var(--error);
-  --visited: var(--accent-alt);
-  --active: var(--accent);
-
-  --select-text: var(--text-alt);
-  --select-bg: var(--accent-alt);
-
-  background-color: var(--bg2);
-  color: var(--text);
 }
 
 ::selection {
   color: var(--select-text);
   background: var(--select-bg);
+}
+a {
+  background: none;
+  color: var(--main);
+}
+a:hover {
+  background: none;
+  color: var(--main-alt);
+  text-shadow: 1px 1px 3px var(--main);
 }
 
 h1,
@@ -58,7 +34,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-h1);
-  text-shadow: 0.1rem 0.1rem 0.2rem var(--main-alt);
+  text-shadow: 0.1rem 0.1rem 1rem var(--main);
 }
 
 img {
@@ -67,10 +43,10 @@ img {
 
 code {
   border-width: 3px;
-  border-color: (--main);
+  border-color: var(--main);
   background-color: var(--code-bg);
   color: var(--code);
-  padding: 0.1rem 0.1rem;
+  padding: 0.1rem 0.1rem auto;
 }
 
 .scrollbar {
