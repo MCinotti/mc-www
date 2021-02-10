@@ -1,8 +1,8 @@
 :root {
-  --icon #FF6200;
-  --slogan #FFFFFF;
-  --b-name #AAAAAA;
-  --bg #111111;
+  --icon: #FF6200;
+  --slogan: #FFFFFF;
+  --b-name: #AAAAAA;
+  --bg: #111111;
 }
 body{
   background-origin: padding-box;

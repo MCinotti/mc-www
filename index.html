@@ -9,9 +9,7 @@
   <meta name="Description" content="Enter your description here" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/darkly/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
   <!-- Favicon -->
-
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
@@ -19,12 +17,7 @@
   <link rel="manifest" href="manifest.json">
   <!-- MagicPuddle CSS -->
   <link rel="stylesheet" href="assets/css/main.css">
-  <script type="text/javascript">
-    $('#navId a').click(e => {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
   <!-- Page Name -->
   <title>Martin Cinotti</title>
 </head>
@@ -44,22 +37,28 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false">Magrathea</a>
+          aria-expanded="false"><i class="fas fa-play"></i>Toy Box</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="https://magicpuddle.netlify.app">MagicPuddle</a>
           <a class="dropdown-item" href="https://magicpuddle.netlify.app/wiki">MP Wiki</a>
-          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="https://magicpuddle.netlify.app/mpos">MPOS</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://fontawesome.com/icons?d=gallery">Font Awesome Icons</a>
+          <a class="dropdown-item" href="https://www.nerdfonts.com/cheat-sheet">Nerd Font Icons</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="fcc.html">FCC Projects</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://playgameoflife.com">Conways's Game of Life</a>
         </div>
       </li>
     </ul>
     <!-- Tab panes -->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="home" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab2Id" id="main" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab3Id" id="mp" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab2Id" id="resume" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3Id" id="folio" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab4Id" id="toybox" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab5Id" id="dropdown-menu" role="tabpanel"></div>
     </div>
   </header>
 
@@ -69,19 +68,20 @@
         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
           <!-- -->
           <div class="card">
-            <img class="card-img-top" src="assets/img/bar.png" alt="Card image cap">
+            <img class="card-img-top" src="assets/img/mc-logo-banner.png" alt="Card image cap">
             <div class="card-body">
-              <h3 class="card-title">Martin Cinotti</h3>
-              <p class="card-text">System Administrator</p>
-              <p class="card-text"><a href="https://www.freecodecamp.org/martinc"><i class="fab fa-free-code-camp"> </i>
+              <h3 class="card-title">Info: <i class="fas fa-poo"></i><i class="fas fa-toilet"></i><i
+                  class="fa fa-toilet-paper"></i></h3>
+              <p class="card-text"><i class="fas fa-users-cog"></i><a href="">System Administrator</a></p>
+              <p class="card-text"><i class="fab fa-free-code-camp"></i><a href="https://www.freecodecamp.org/martinc">
                   Full Stack Developer</a></p>
             </div>
             <div class="card-body">
               <p><i class="far fa-paper-plane"></i> : <a href="mailto:martincinotti@gmail.com">Send an email</a></p>
               <p><i class="fa fa-phone"></i> : <a href="tel:407-308-2809">(407)-308-2809</a></p>
+              <a href="https://github.com/MCinotti#git" class="card-link"><i class="fab fa-github"></i></a>
               <a href="#" class="card-link"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="card-link"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="card-link"><i class="fab fa-youtube"></i></a>
+              <a href="https:twitter.com/martincinotti#twit" class="card-link"><i class="fab fa-twitter"></i></a>
               <a href="#" class="card-link"><i class="fab fa-discord"></i></a>
             </div>
           </div>
@@ -91,11 +91,11 @@
             <div class="card-body">
               <h4>OS:</h4>
               <ul class="os">
-                <li><i class="fab fa-windows"> </i> Windows</li>
-                <li><i class="fab fa-apple"> </i> Apple</li>
-                <li><i class="fab fa-freebsd"> </i> FreeBSD</li>
-                <li><i class="fab fa-android"> </i> Android</li>
-                <li><i class="fab fa-linux"> </i> Linux</li>
+                <li><i class="fab fa-windows"></i>Windows</li>
+                <li><i class="fab fa-apple"></i>Apple</li>
+                <li><i class="fab fa-freebsd"></i>FreeBSD</li>
+                <li><i class="fab fa-android"></i>Android</li>
+                <li><i class="fab fa-linux"></i>Linux</li>
               </ul>
 
               <h4>Frame:</h4>
@@ -116,6 +116,13 @@
                 <li><i class="fab fa-php"></i> php</li>
                 <li><i class="fab fa-lua"></i> lua</li>
               </ul>
+              <h4>Serve:</h4>
+              <ul class="lang">
+                <li><i class="fab fa-"></i>Tech Support</li>
+                <li><i class="fab fa-"></i>Potato Peeler</li>
+                <li><i class="fab fa-"></i>Potato Gun</li>
+                <li><i class="fab fa-"></i>Potato Pie </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -129,16 +136,21 @@
       <img src="https://api.netlify.com/api/v1/badges/0e142e16-d740-4ee3-bc3f-e1f00d28d1e9/deploy-status"
         alt="netlify deploy badge">
       <!-- 100 days of code L/R-->
-      <a href="https://www.software.com/100-days-of-code"><img
-          src="https://www.software.com/badges/100-days-of-code"></a>
+
       <a href="https://www.100daysofcode.com"><img
-          src="https://img.shields.io/static/v1?label=Challenge&amp;labelColor=384357&amp;message=100%20Days%20of%20Code&amp;color=00b4ee&amp;style=for-the-badge&amp;link=https://www.100daysofcode.com"></a>
+          src="https://img.shields.io/static/v1?label=Challenge&amp;labelColor=212121&amp;message=100%20Days%20of%20Code&amp;color=662700&amp;style=for-the-badge&amp;link=https://www.100daysofcode.com"></a>
     </div>
     <div class="credits">
       <p>Copyright © 2021 | Martin Cinotti | All Rights Reserved</p>
     </div>
   </footer>
   <!-- Script section -->
+  <script type="text/javascript">
+    $('#navId a').click(e => {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
