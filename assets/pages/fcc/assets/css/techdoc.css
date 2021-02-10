@@ -1,0 +1,90 @@
+body {
+  display: block;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  color: var(--text);
+  font-size: 2rem;
+  width: 100%;
+}
+code {
+  box-align: left;
+}
+.nav-bar {
+  position: fixed;
+  display: block;
+  background-color: var(--background);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 20%;
+  height: 99%;
+  border: 2px solid var(--secondary-alt);
+  box-shadow: 0.2em 0.2em 0.3em var(--background-alt);
+}
+
+.nav-header {
+  display: flex-box;
+  font-family: var(--font-h1);
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: var(--secondary-alt);
+  text-shadow: 0.1em 0.1em 0.15em var(--text-alt);
+  margin: 0;
+  padding: 2rem;
+}
+
+.nav-link {
+  display: block;
+  font-weight: 900;
+  font-size: 0.96rem;
+  text-decoration: none;
+  text-align: left;
+  color: var(--secondary);
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--secondary);
+}
+
+a:hover {
+  color: var(--text);
+  text-shadow: 0.1em 0.1em 0.15em var(--secondary-alt);
+}
+
+.main-doc {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  right: -20%;
+  width: 100%;
+  height: auto;
+  margin: 2%;
+}
+
+.main-section {
+  text-align: left;
+  /* border: 2px solid var(--secondary-alt); */
+}
+
+.header {
+  display: block;
+  font-family: var(--font-h1);
+  font-size: 4rem;
+  color: var(--secondary);
+  margin: 2%;
+  text-shadow: 0.1em 0.1em 0.15em var(--background-alt);
+}
+
+article p, li {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin: 2%;
+  line-height: 1.5;
+  font-size: 2rem;
+}

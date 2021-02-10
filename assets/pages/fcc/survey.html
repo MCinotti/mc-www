@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://use.fontawesome.com/7abdd620a2.js" origin="crossorigin"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta description="MagicPuddle survey form">
+  <meta keywords="MagicPuddle, fcc, mcinotti">
+  <meta name="Survey" content="FreeCodeCamp Survey Projects">
+  <title>Survey Form - FCC Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/survey.css">
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <div>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve!</p>
+    </div>
+    <div id="survey">
+      <form id="survey-form" method="GET" action="https://magicpuddle.netlify.com/">
+        <label id="name-label">Name: <input id="name" type="text" name="name" placeholder="What should we call you?"
+            required></label><br>
+        <label id="email-label">Email: <input id="email" type="email" name="email" placeholder="your_name@email.com"
+            required></label><br>
+        <label id="number-label">Age: <input id="number" type="number" name="age" min="9" max="126" placeholder="18"
+            required></label><br>
+        <label id="dropdown">Select your role:
+          <select>
+            <option>I am a Student</option>
+            <option>I am the Master</option>
+            <option>This is my full time job</option>
+          </select>
+        </label><br>
+        <label for="user-rating-list">How likley are you to recommend us to a friend?
+          <ul id="user-rating-list">
+            <li><label><input type="radio" name="radio-button" value="definitley"
+                  class="user-rating-list">Definitly</label></li>
+            <li><label><input type="radio" name="radio-button" value="maybe" class="user-rating-list">Maybe</label>
+            </li>
+            <li><label><input type="radio" name="radio-button" value="unlikley" class="user-rating-list">Ew
+                No!</label></li>
+          </ul>
+        </label>
+        <label id="dropdown">What do you like best about MagicPuddle?:
+          <select>
+            <option>Projects</option>
+            <option>Wiki</option>
+            <option>Community</option>
+            <option>Challanges</option>
+          </select>
+        </label><br>
+        <label class="checkbox">Things that should be improved in the future (Check all that apply):
+          <ul class="improve-check-list">
+            <li><label><input type="checkbox" name="checkbox" class="improve-check-list"
+                  value="Front-end">Front-end</label></li>
+            <li><label><input type="checkbox" name="checkbox" class="improve-check-list"
+                  value="Back-end">Back-end</label></li>
+            <li><label><input type="checkbox" name="checkbox" class="improve-check-list" value="Wiki">Wiki</label>
+            </li>
+            <li><label><input type="checkbox" name="checkbox" class="improve-check-list"
+                  value="Community">Community</label></li>
+            <li><label><input type="checkbox" name="checkbox" class="improve-check-list"
+                  value="Challanges">Challanges</label></li>
+          </ul>
+        </label>
+        <label>Comments or Suggestions?:
+          <textarea name="comments" rows="13" cols="35" placeholder="Send your comments and suggestions!"
+            required></textarea>
+        </label><br>
+        <label>
+          <input id="submit" type="submit" name="submit" value="Submit" />
+        </label>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>original page <a href="https://codepen.io/freeCodeCamp/full/VPaoNP" target="blank">here</a></p>
+
+  </footer>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

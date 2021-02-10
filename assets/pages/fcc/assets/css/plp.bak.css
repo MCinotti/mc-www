@@ -1,0 +1,156 @@
+body {
+  display: block;
+  font-family: var(--font-main);
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.video {
+  width: 40vw;
+  height: 20vw;
+}
+
+#header{
+  margin: 0;
+  padding: 0;
+
+}
+.nav {
+  position: fixed;
+  background-color: var(--primary);
+  border: 0px solid var(--primary-alt);
+  box-shadow: 0.1rem 0.1rem 0.26rem var(--primary-alt);
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.nav img {
+  width: 100%;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.nav-bar {
+  font-family: var(--font-h1);
+  position: fixed;
+  text-align: right;
+  text-shadow: 0.1rem 0.1rem 0.16rem var(--text-alt);
+  margin: 1rem;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar a {
+  font-size: 2rem;
+  text-decoration: none;
+  margin-right: 2rem;
+  color: var(--text);
+}
+
+.nav-bar a:hover{
+  color: var(--text-alt);
+  text-shadow: 0.1rem 0.1rem 0.15rem var(--primary-alt);
+}
+.main {
+  text-align: center;
+  margin-top: 3%;
+  width: 100vw;
+}
+
+.heading {
+  text-shadow: 0.1rem 0.1rem 0.15rem var(--primary-alt);
+}
+
+.btn {
+  background-color: var(--primary-alt);
+  color: var(--text);
+  text-shadow: 0.1rem 0.1rem 0.15rem var(--text-alt);
+  font-weight: bold;
+  border: none;
+  padding: 0.2rem;
+  margin-top: 0.2rem;
+  border-radius: 1rem;
+}
+
+.email-input {
+  border-radius: 1rem;
+}
+
+.email-input::placeholder {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.features {
+  margin: 1rem;
+  display: flex;
+  text-align: left;
+  width: 100%;
+}
+.features h2 {
+  display: inline;
+  text-shadow: 0.1rem 0.1rem 0.15rem var(--secondary);
+}
+.features-details{
+  display: inline;
+}
+
+.grid {
+    display: flex-box;
+    width: 80vw;
+    height: auto;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.2rem;
+  width: 15vw;
+}
+
+.how-it-works {
+  width: 100%;
+  margin: 1rem;
+}
+
+.video {
+  border-color: var(--secondary);
+  border-radius: 2rem;
+}
+
+.specials {
+  display: inline-flex;
+}
+
+.pricing {
+  text-align: center;
+  background-color: var(--background-alt);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.1em 0.1em 0.5em 0.2em var(--primary);
+  width: 11rem;
+}
+
+.pricing h1 {
+  font-size: 1rem;
+  color: var(--secondary);
+  margin: 0;
+  padding: 0;
+}
+
+.pricing price {
+  font-weight: bolder;
+  text-align: center;
+  color: var(--primary-alt);
+  text-shadow: 0.1em 0.1em 0.15em var(--text-alt)
+}
+
+.footer {
+  text-align: center;
+  display: fixed;
+}

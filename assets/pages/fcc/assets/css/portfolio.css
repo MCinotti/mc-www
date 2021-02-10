@@ -1,0 +1,9 @@
+.navbar {
+  position: relative;
+  color: var(--text);
+  width: 25%;
+  height: 75%;
+}
+.nav-menu{
+  position: inline;
+}

@@ -1,0 +1,3 @@
+[submodule "assets/fcc"]
+	path = assets/fcc
+	url = https://github.com/MCinotti/fcc.git

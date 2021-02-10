@@ -1,0 +1,14 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+
+/* backround */
+    --background-main: #333;
+    --background-alt: #000000;
+
+/* nav-colors */
+    --nav-color: #ff3c00;
+    --nav-background: #430081da;
+}

@@ -1,0 +1,17 @@
+body {
+  font-family: var(--font-main);
+  background-color: var(--background);
+}
+
+h1 {
+  text-align-last: inherit;
+}
+
+p {
+  text-align: center;
+}
+
+.survey {
+  text-anchor: middle;
+  text-align: center;
+}
