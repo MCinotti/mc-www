@@ -9,16 +9,16 @@
   <meta keywords="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Technical Document Page | FCC Project</title>
-  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap" rel="stylesheet" rel="crossorigin">
+  <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/techdoc.css">
 </head>
 
 <body class="container">
-  <div class="container">
+  <div class="nav-menu">
     <nav class="nav-bar" id="navbar">
-      <header class="nav-header">JS Documentation</header>
+      <header class="nav-header container">JS Documentation</header>
       <ul class="container">
         <li><a class="nav-link" href="#introduction">Introduction</a></li>
         <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
@@ -37,6 +37,7 @@
       </ul>
     </nav>
   </div>
+
   <main class="main-doc container" id="main-doc">
     <section class="main-section" id="introduction">
       <header class="header">Introduction</header>
@@ -73,6 +74,7 @@
         </ul>
       </article>
     </section>
+
     <section class="main-section container" id="What_you_should_already_know">
       <header class="header">What you should already know</header>
       <article>
@@ -94,6 +96,7 @@
         </ul>
       </article>
     </section>
+
     <section class="main-section container" id="JavaScript_and_Java">
       <header class="header">JavaScript and Java</header>
       <article>
@@ -125,6 +128,7 @@
         </p>
       </article>
     </section>
+
     <section class="main-section container" id="Hello_world">
       <header class="header">Hello world</header>
       <article>
@@ -133,13 +137,14 @@
           code:
         </p>
         <div class="container">
-          <code>function greetMe(yourName) { alert("Hello " + yourName); greetMe("World");</code>
+          <code class="code">function greetMe(yourName) { alert("Hello " + yourName); greetMe("World");</code>
         </div>
         <p>
           Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
         </p>
       </article>
     </section>
+
     <section class="main-section container" id="Variables">
       <header class="header">Variables</header>
       <article class="container">
@@ -162,6 +167,7 @@
         </p>
       </article>
     </section>
+
     <section class="main-section container" id="Declaring_variables">
       <header class="header">Declaring variables</header>
       <article>
@@ -192,6 +198,7 @@
         </p>
       </article>
     </section>
+
     <section class="main-section container" id="Variable_scope">
       <header class="header">Variable scope</header>
       <article>
@@ -222,6 +229,7 @@
         </div>
       </article>
     </section>
+
     <section class="main-section" id="Global_variables">
       <header class="header">Global variables</header>
       <article>
@@ -239,6 +247,7 @@
         </p>
       </article>
     </section>
+
     <section class="main-section" id="Constants">
       <header class="header">Constants</header>
       <article>
@@ -280,6 +289,7 @@
         </div>
       </article>
     </section>
+
     <section class="main-section container" id="Data_types">
       <header class="header">Data types</header>
       <article class="container">
@@ -289,8 +299,9 @@
           <li>
             Boolean. true and false.
           </li>
-          <ul>
-            <li>
+        </ul>
+        <ul>
+          <li>
               null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same
               as Null, NULL,
               or any other variant.
@@ -307,7 +318,6 @@
             <li>
               Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.
             </li>
-          </ul>
           <li> and Object</li>
         </ul>
         <p>
@@ -468,8 +478,7 @@
       <article class="container">
         <ul>
           <li>
-            All the documentation in this page is taken from <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+            <p>All the documentation in this page is taken from <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a></p>
           </li>
         </ul>
       </article>

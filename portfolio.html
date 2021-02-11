@@ -29,17 +29,17 @@
     <!-- Nav tabs -->
     <ul class="nav nav-tabs justify-content-center nav-fill">
       <li class="nav-item">
-        <a href="index.html#" class="nav-link"><i class="fas fa-home"></i></a>
+        <a href="index.html" class="nav-link active"><i class="fas fa-home"></i></a>
       </li>
       <li class="nav-item">
-        <a href="" class="nav-link"><i class="far fa-file"></i></a>
+        <a href="" class="nav-link"><i class="far fa-file"></i> Resume</a>
       </li>
       <li class="nav-item">
-        <a href="portfolio.html" class="nav-link active"><i class="far fa-folder-open"></i></a>
+        <a href="portfolio.html" class="nav-link"><i class="far fa-folder-open"></i> Portfolio</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-          aria-expanded="false"><i class="fab fa-google-play"></i>Toy Box</a>
+          aria-expanded="false"><i class="fas fa-play"></i>Toy Box</a>
         <div class="dropdown-menu">
           <a class="dropdown-item" href="https://magicpuddle.netlify.app">MagicPuddle</a>
           <a class="dropdown-item" href="https://magicpuddle.netlify.app/wiki">MP Wiki</a>
@@ -48,6 +48,8 @@
           <a class="dropdown-item" href="https://fontawesome.com/icons?d=gallery">Font Awesome Icons</a>
           <a class="dropdown-item" href="https://www.nerdfonts.com/cheat-sheet">Nerd Font Icons</a>
           <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="fcc.html">FCC Projects</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="https://playgameoflife.com">Conways's Game of Life</a>
         </div>
       </li>
@@ -55,10 +57,10 @@
     <!-- Tab panes -->
     <div class="tab-content">
       <div class="tab-pane fade show active" id="home" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab2Id" id="main" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab3Id" id="mp" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-      <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab2Id" id="resume" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3Id" id="folio" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab4Id" id="toybox" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab5Id" id="dropdown-menu" role="tabpanel"></div>
     </div>
   </header>
 
@@ -88,7 +90,7 @@
         </div>
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 container">
           <div class="card card-body">
-            <h2>Samples </h2>
+            <h2>Portfolio</h2>
             <table class="table table-responsive folio">
               <tbody>
                 <tr>
@@ -124,6 +126,7 @@
 
   <footer class="footer">
     <div id="badges" class="badges">
+      <img src="https://travis-ci.com/MCinotti/fcc.svg?branch=master&amp;status=unknown" alt="build:">
       <!-- Netlify Build Status-->
       <img src="https://api.netlify.com/api/v1/badges/0e142e16-d740-4ee3-bc3f-e1f00d28d1e9/deploy-status"
         alt="netlify deploy badge">

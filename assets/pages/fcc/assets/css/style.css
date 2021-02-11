@@ -70,8 +70,10 @@ hr {
 div {
     padding: 2rem auto;
     margin: 2rem auto;
+}
 
-h1 h2,
+h1,
+h2,
 h3,
 h4,
 h5,
@@ -143,11 +145,6 @@ h6 {
     }
 }
 
-p {
-    margin: 3px;
-    padding: 3px;
-}
-
 button,
 .button {
     margin-bottom: 0.2rem;
@@ -173,10 +170,10 @@ form {
 }
 
 html {
-    padding: 0 auto;
+    padding: 1rem auto;
     margin: 0 auto;
     font-size: 62.5%;
-    justify-content: center;
+    justify-content: left;
 }
 
 .scrollbar {
@@ -200,10 +197,10 @@ html {
 body {
     padding: 0 auto;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: left;
     background-color: var(--background);
     place-content: center;
-    font-size: 2rem;
+    font-size: 1rem;
     /* currently ems cause chrome bug misinterpreting rems on body element */
     font-weight: 400;
     font-family: var(--font);
@@ -215,23 +212,23 @@ code {
     align-content: justify;
     font-family: 'Terminus', 'Hack', monospace;
     text-align: center;
-    font-size: 75%;
+    font-size: 100%;
     white-space: pre-wrap;
-    padding: 0.3rem;
+    padding: 1rem;
     background: var(--background-alt);
     color: var(--code);
     box-shadow: 0rem 0rem 0.5rem 0.3rem var(--primary-alt);
     border: 0.1rem solid var(--secondary);
-    border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
+    border-radius: 1rem;
 }
 
 pre>code {
     font-family: 'Terminus', 'Hack', monospace;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
     white-space: pre;
 }
 
@@ -256,11 +253,11 @@ hr {
     padding: 0 auto;
     margin: 0 auto;
     border: 1rem solid var(--primary);
-    border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    border-radius: 2rem;
 }
 
 h1,
@@ -373,31 +370,31 @@ h6 {
     z-index: auto;
     border: .3rem solid var(--primary);
     box-shadow: 0 -0rem 1rem var(--text);
-    border-radius: 8rem;
     -webkit-border-radius: 8rem;
     -moz-border-radius: 8rem;
     -ms-border-radius: 8rem;
     -o-border-radius: 8rem;
+    border-radius: 0rem;
     margin-bottom: 10%
 }
 
 #main img {
-    border-radius: 6rem;
     -webkit-border-radius: 6rem;
     -moz-border-radius: 6rem;
     -ms-border-radius: 6rem;
     -o-border-radius: 6rem;
+    border-radius: 6rem;
     size: auto
 }
 
 #projects {
     display: flexbox;
     box-sizing: border-box;
-    border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    border-radius: 2rem;
     page-break-after: always;
     padding: 4rem;
     height: 4rem
@@ -406,23 +403,24 @@ h6 {
 #links {
     display: flexbox;
     box-sizing: border-box;
-    border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    border-radius: 2rem;
     page-break-after: always;
     padding: 4rem
 }
 
 #forms {
-    display: flexbox;
+    display: flex-box;
     box-sizing: border-box;
-    border-radius: 2rem;
+    border-radius:{
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem
+    border-radius: 2rem;}
 }
 
 #contact {
@@ -445,11 +443,11 @@ h6 {
 }
 
 #badges img {
-    border-radius: 2rem;
+    border-radius: 2rem; {
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    -o-border-radius: 2rem;}
 }
 
 @media(max-width:550px) {
@@ -502,11 +500,12 @@ table {
     padding: 0 auto;
     margin: 0 auto;
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 2rem;{
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+  }
 }
 
 tr {
@@ -518,11 +517,12 @@ th {
     font-size: 100%;
     text-shadow: 0rem 0rem 0.2rem var(--secondary);
     background-color: var(--primary);
-    border-radius: 2rem;
+    border-radius: 2rem;{}
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+}
     box-shadow: 0 -0.123rem 0.3rem var(--text);
 }
 
@@ -531,11 +531,12 @@ td {
     width: 16.66%;
     color: var(--secondary);
     font-size: 75%;
-    border-radius: 2rem;
+    border-radius: 2rem;{
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    }
     box-shadow: 0.0rem 0.123rem 0.1rem var(--secondary);
 }
 
@@ -586,6 +587,7 @@ td:hover {
     float: center;
     box-sizing: border-box;
     grid-auto-columns: auto;
+      -ms-grid-columns: auto;
 }
 
 /* For devices larger than 400px */
