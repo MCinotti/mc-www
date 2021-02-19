@@ -4,10 +4,16 @@
 			"path": "."
 		}
 	],
-	"settings": {},
+	"settings": {
+		"cSpell.words": [
+			"Conways's",
+			"Hurty"
+		]
+	},
 	"extensions": {
 		"recommendations": [
 			"ryanmyrvold.front-end-professional"
 		]
-	}
+	},
+	"recommendations": []
 }
